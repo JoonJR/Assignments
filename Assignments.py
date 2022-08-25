@@ -11,10 +11,14 @@ import random
 #radius = float(input("Give the radius? "))
 #print(f"Area is {math.pi * radius ** 2:.2f}")
 
+#phase 3
+
 #phase 6
 
-print(f"{random.randint(0, 999):03d}")
-print(str(random.randint(0,9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)))
+#print(f"{random.randint(0, 999):03d}")
+#print(str(random.randint(0,9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)))
+
+
 
 
 
