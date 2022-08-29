@@ -29,7 +29,7 @@ else:
 
 #exercise 3
 
-user_male = "M" or "m"
+user_male = "M"
 user_female = "F"
 normal_hv = "Your hemoglobin value is normal."
 low_hv = "Your hemoglobin value is lower than normal."
