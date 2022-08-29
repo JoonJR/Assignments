@@ -42,9 +42,8 @@ print(f"The weight in modern units is: {weight_kilos} kg and {weight_gramms_left
 
 #phase 6
 
-print(f"{random.randint(0, 999):03d}")
 print(str(random.randint(0,9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)))
-
+print(str(random.randint(1,6)) + str(random.randint(1, 6)) + str(random.randint(1, 6)) + str(random.randint(1,6)))
 
 
 
