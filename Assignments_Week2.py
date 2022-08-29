@@ -36,7 +36,7 @@ low_hv = "Your hemoglobin value is lower than normal."
 high_hv = "Your hemoglobin value is higher than normal."
 
 user_gender = input("What is your biological gender? (M or F): ")
-user_hv = float(input("What is your hemoglobin value? (g/l): "))
+user_hv = int(input("What is your hemoglobin value? (g/l): "))
 if user_gender == user_male:
     if user_hv >= 137 and user_hv <= 167:
         print(normal_hv)
