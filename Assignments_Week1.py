@@ -34,7 +34,7 @@ weight_talents = float(input("Enter talents "))
 weight_pounds = float(input("Enter pounds "))
 weight_lots = float(input("Enter lots "))
 print("The weight in modern units are: ")
-weight_total_in_grams = weight_talents * 20 * 32 * 13.3 + weight_pounds * 32 * 13.3 + weight_lots*13.3
+weight_total_in_grams = weight_talents * 20 * 32 * 13.3 + weight_pounds * 32 * 13.3 + weight_lots * 13.3
 weight_kilos = int(weight_total_in_grams/1000)
 print(weight_kilos)
 weight_grams_left = weight_total_in_grams - weight_kilos * 1000
