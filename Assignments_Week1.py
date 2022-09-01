@@ -20,12 +20,12 @@ print(f"Area of the rectangle is {length * width :.1f}")
 
 #phase 4
 
-num1 = float(input("Give a number: "))
-num2 = float(input("Give a 2nd number: "))
-num3 = float(input("Give a 3rd number: "))
+num1 = int(input("Give a integer number: "))
+num2 = int(input("Give a 2nd integer number: "))
+num3 = int(input("Give a 3rd integer number: "))
 print(f"The sum of the 3 numbers is {num1 + num2 + num3:.0f}")
 print(f"The product of numbers is {num1 * num2 * num3:.0f}")
-print(f"The average of your numbers is {(num1 + num2 + num3)/3:.2f}")
+print(f"The average of your numbers is {(num1 + num2 + num3)/3.0:.2f}")
 
 #phase 5
 
