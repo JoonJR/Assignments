@@ -4,7 +4,7 @@ fish_length = int(input("Enter length of the fish you caught in centimeters: "))
 limit = 42
 length_missing = limit - fish_length
 if fish_length < limit:
-    print("Release fish back to the lake, it needs to grow " + str(length_missing) + " centimeters." )
+    print("Release the fish back to the lake, it needs to grow " + str(length_missing) + " centimeters." )
 else:
     print("The fish is over 42cm and it meets the size limit.")
 
@@ -36,7 +36,7 @@ low_hv = "Your hemoglobin value is lower than normal."
 high_hv = "Your hemoglobin value is higher than normal."
 
 user_gender = input("What is your biological gender? (M or F): ")
-user_hv = float(input("What is your hemoglobin value? (g/l): "))
+user_hv = int(input("What is your hemoglobin value? (g/l): "))
 if user_gender == user_male:
     if user_hv >= 137 and user_hv <= 167:
         print(normal_hv)
@@ -52,7 +52,7 @@ elif user_gender == user_female:
     elif user_hv > 155:
         print(high_hv)
 else:
-    print("Input error. Use capital letters")
+    print("Input error.")
 
 #exercise 4
 
