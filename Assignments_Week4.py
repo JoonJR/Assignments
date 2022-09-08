@@ -17,7 +17,7 @@ print("The sum of dices rolled is: " + str(sum))
 #phase 2
 
 numbers_list = []
-print("Enter at least 5 numbers.")
+print("Enter at least 5 numbers to sort 5 greatest numbers in descending order.")
 numbers_input = input("Enter first number: ")
 while numbers_input != "":
     numbers_list.append(numbers_input)
