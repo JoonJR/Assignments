@@ -47,3 +47,15 @@ else:
     print(num, "is not a prime number.")
 
 #phase 4
+
+city_list = []
+print("You are asked to input 5 different cities.")
+city_count = 5
+
+
+for i in range(city_count):
+    city_list.append(input("Enter the cities: "))
+    i += 1
+
+for i in city_list:
+    print(i)
