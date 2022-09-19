@@ -19,3 +19,22 @@ while True:
 
 for i in names:
     print(i)
+
+#phase 3
+
+airports = {"EFHK":"Helsinki-Vantaa Airport"}
+while True:
+    select = int(input("Select a option (1-3) \n1. Enter a new airport.\n2.Fetch airport information\n3. Quit.\n Enter your option : "))
+    if select == 1:
+        ICAO = input("Enter ICAO code of the airport: ")
+        airport = input("Enter name of the airport: ")
+        airports[ICAO] = airport
+        print(airports)
+    elif select == 2:
+        ICAO = input("Enter ICAO code of the airport: ")
+        if ICAO in airports:
+            print(f"{ICAO} airport name is {airports[ICAO]}")
+    elif select == 3:
+        break
+    else:
+        print("Error. Wrong input, enter option (1-3)")

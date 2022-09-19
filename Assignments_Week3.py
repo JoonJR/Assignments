@@ -9,11 +9,11 @@ while n <= 1000:
 
 #phase 2
 
-inches_input = float(input("Give a lenght in inches to convert it to centimeters: "))
+inches_input = float(input("Give a length in inches to convert it to centimeters: "))
 while inches_input >=0:
     cm = inches_input * 2.54
-    print(f"This lenght in cm is: {cm:.2f}")
-    inches_input = float(input("Enter lenght in inches: "))
+    print(f"This length in cm is: {cm:.2f}")
+    inches_input = float(input("Enter length in inches: "))
 
 #phase 3
 
@@ -76,31 +76,10 @@ while N_count != N:
     x = random.uniform(-1, 1)
     y = random.uniform(-1, 1)
     nn = x**2+y**2
-
+    print(x)
 
     if nn < 1:
         n = n +1
 
 pi = 4*n/N
 print(pi)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

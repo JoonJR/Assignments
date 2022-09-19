@@ -13,6 +13,7 @@ print(dice)
 
 #phase 2
 
+
 def rollDice(sides):
     return random.randint(1,sides)
 
@@ -76,7 +77,7 @@ p2_price = int(input("Enter the price of the second pizza: "))
 
 def calc_p_price(diameter, price, name):
     areap = math.pi * (diameter / 2)**2
-    return price / (areap * 0.0001)
+    return price / (areap / 100)
 
 
 def calc_area_m(diameter, price, name):
