@@ -1,6 +1,8 @@
+import mysql.connector
+import geopy
+from geopy import distance
 #exercise 1
 
-import mysql.connector
 
 connection = mysql.connector.connect(
         host='127.0.0.1',
@@ -33,7 +35,6 @@ def area_airports(area):
     cursor = connection.cursor()
     cursor.execute(sql)
     results = cursor.fetchall()
-    print(results)
     if cursor.rowcount > 0:
         for row in results:
             print(f"{row[1]} has")
@@ -43,3 +44,28 @@ def area_airports(area):
 
 area = input("Enter the area code to see how many airports it has: ")
 area_airports((area))
+
+#excercise 3
+
+def coordinates(icao1):
+    sql = "SELECT latitude_deg, longitude_deg from airport where ident ='" + icao1 + "'"
+    cursor = connection.cursor()
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return results
+
+
+def coordinates(icao2):
+    sql = "SELECT latitude_deg, longitude_deg from airport where ident ='" + icao2 + "'"
+    cursor = connection.cursor()
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    return results
+
+
+icao1 = input("Enter first ICAO code to calculate distance: ")
+icao2 = input("Enter second ICAO code to calculate distance: ")
+a = coordinates(icao1)
+b = coordinates(icao2)
+
+print(f"Distance between airports is: {distance.distance(a, b).kilometers:.1f} kilometers")
