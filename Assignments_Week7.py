@@ -13,7 +13,7 @@ connection = mysql.connector.connect(
         autocommit=True
         )
 
-def geticao(airport_name):
+def getairport(airport_name):
     sql = "SELECT ident, airport.name, municipality FROM airport"
     sql += " WHERE ident='" + airport_name + "'"
     cursor = connection.cursor()
@@ -25,9 +25,10 @@ def geticao(airport_name):
     return
 
 airport_name = input("Enter ICAO code: ")
-geticao(airport_name)
+getairport(airport_name)
 
 #exercise 2
+
 
 def area_airports(area):
     sql = "SELECT airport.iso_country, country.name, airport.type, count(*) FROM airport, country"
