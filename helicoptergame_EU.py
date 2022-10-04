@@ -90,7 +90,8 @@ fullrefund_text = ["You found an old coupon for a free flight on the floor of a 
 
 player_name = input("Enter your name: ")
 
-rules = f"Hello " + player_name + "! You have been given the mission of travelling to all 50 EU-countries! You will be given a helicopter and a Co2 budget of 10000 which you cannot exceed. For every 1000km you use 200 Co2.\n\
+rules = f"Hello " + player_name + "! You have been given the mission of travelling to all 50 EU-countries! You will be" \
+" given a fancy helicopter with a pilot and a Co2 budget of 10000 which you cannot exceed. For every 1000km you use 200 Co2.\n\
 Your starting location will be random. From that point you can choose to fly to any country, however the heliports will be random. \n\
 Every time before you fly a dice of destiny will be rolled. The outcomes of the rolls are as follows:\n\
 6. You get a full Co2 refund for that particular flight.\n\
@@ -125,7 +126,8 @@ while is_alive:
         recent_country = current_country
 
         if recent_heliport != "":
-            print(f"You are currently in {recent_country} at {recent_heliport}. Your current Co2 budget is {budget}. You have traveled to {len(countries)}/50 countries.\n")
+            print(f"You are currently in {recent_country} at {recent_heliport}. Your current Co2 budget is {budget}. "
+                  f"You have travelled to {len(countries)}/50 countries.\n")
             score = len(countries * 100)
             recent_heliport = ""
             destination = input("\nEnter the country you wish to travel to: ")
@@ -177,7 +179,8 @@ while is_alive:
                     budget -= int(distance / 5)  # calculates Co2
                     typewriter(randomcountry_text[random.randint(0, 3)])
                     print(
-                        f"\nYou ended up in {current_country}, {current_heliport}. Your flight was {distance:.1f} kilometers and you had to pay {(distance / 5):.1f} Co2")
+                        f"\nYou ended up in {current_country}, {current_heliport}. Your flight was {distance:.1f}"
+                        f" kilometers and you had to pay {(distance / 5):.1f} Co2")
 
                 if number == 4:
 
@@ -214,7 +217,8 @@ while is_alive:
             current_heliport = get_heliport(current_country)
             print(len(countries))
             print(countries)
-            print(f"\nYou are currently in {current_country} at {current_heliport}. Your current Co2 budget is {budget}. You have traveled to {len(countries)}/50 countries.")
+            print(f"\nYou are currently in {current_country} at {current_heliport}. Your current Co2 budget is {budget}."
+                  f" You have traveled to {len(countries)}/50 countries.")
 
             destination = input("\nEnter the country you wish to travel to: ")
             destination_heliport = get_heliport(destination)
@@ -265,7 +269,8 @@ while is_alive:
                     budget -= int(distance / 5)  # calculates Co2
                     typewriter(randomcountry_text[random.randint(0, 3)])
                     print(
-                        f"\nYou ended up in {current_country}, {current_heliport}. Your flight was {distance:.1f} kilometers and you had to pay {(distance / 5):.1f} Co2")
+                        f"\nYou ended up in {current_country}, {current_heliport}. Your flight was {distance:.1f}"
+                        f" kilometers and you had to pay {(distance / 5):.1f} Co2")
 
                 if number == 4:
 

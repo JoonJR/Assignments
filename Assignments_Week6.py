@@ -9,9 +9,9 @@ print("Season for that month is: ", months_of_the_year[year.index(month_number)/
 
 names = set()
 while True:
-    name = str(input("Enter a name: "))
+    name = input("Enter name to put in on the list: ")
     if name in names:
-        print("Name is already in the list")
+        print("Name is already on the list.")
     elif name != names:
         names.add(name)
     if name == "":
