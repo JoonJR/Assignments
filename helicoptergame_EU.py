@@ -15,9 +15,6 @@ connection = mysql.connector.connect(
          )
 
 
-
-
-
 def get_country():
     sql = "SELECT country.name FROM  country WHERE continent = 'EU' order by RAND() LIMIT 1"
     cursor = connection.cursor()
