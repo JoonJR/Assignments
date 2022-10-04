@@ -93,7 +93,7 @@ fullrefund_text = ["You found an old coupon for a free flight on the floor of a 
 
 player_name = input("Enter your name: ")
 
-rules = "Hello " + player_name + "! You have been given the mission of travelling to all 50 EU-countries! You will be given a helicopter and a Co2 budget of 10000 which you cannot exceed. For every 1000km you use 200 Co2.\n\
+rules = f"Hello " + player_name + "! You have been given the mission of travelling to all 50 EU-countries! You will be given a helicopter and a Co2 budget of 10000 which you cannot exceed. For every 1000km you use 200 Co2.\n\
 Your starting location will be random. From that point you can choose to fly to any country, however the heliports will be random. \n\
 Every time before you fly a dice of destiny will be rolled. The outcomes of the rolls are as follows:\n\
 6. You get a full Co2 refund for that particular flight.\n\
@@ -103,7 +103,7 @@ Every time before you fly a dice of destiny will be rolled. The outcomes of the 
 2. You had to take an unexpected detour. Double the amount of Co2 consumed.\n\
 1. Worst possible scenario. You have a 50% chance of dying.\nGood luck!\nps if there are errors its your fault :p\n"
 
-
+#
 is_alive = True
 budget = 10000
 countries = []
