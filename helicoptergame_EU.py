@@ -31,7 +31,7 @@ def get_heliport(country):
     cursor.execute(sql)
     result = cursor.fetchall()
     if not result:
-        print("This country does not exists or is not located in EU, try again.")
+        print("This country does not exists or is not located in continent EU, try again.")
         return None
 
     if cursor.rowcount > 0:
@@ -101,7 +101,7 @@ Every time before you fly a dice of destiny will be rolled. The outcomes of the 
 2. You had to take an unexpected detour. Double the amount of Co2 consumed.\n\
 1. Worst possible scenario. You have a 50% chance of dying.\nGood luck!\nps if there are errors its your fault :p\n"
 
-#
+#typewriter(rules)
 is_alive = True
 budget = 10000
 countries = []
@@ -215,8 +215,6 @@ while is_alive:
         else:
 
             current_heliport = get_heliport(current_country)
-            print(len(countries))
-            print(countries)
             print(f"\nYou are currently in {current_country} at {current_heliport}. Your current Co2 budget is {budget}."
                   f" You have traveled to {len(countries)}/50 countries.")
 
@@ -305,4 +303,4 @@ while is_alive:
 
 
 else:
-    typewriter(f"\nGame over. \nYour score was: {len(countries) * 100}")
+    typewriter(f"\nYour score was: {len(countries) * 100}")
