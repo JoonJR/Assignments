@@ -15,8 +15,8 @@ class Car:
 
 car1 = Car("ABC-123", 142)
 
-print('First cars registration plate is', car1.reg, 'and the maximum speed on the car is', car1.max_speed, '.'
-      'The current speed is', car1.curr_speed, 'and distance travelled is', car1.distance_travelled)
+print('First cars registration plate is', car1.reg, 'and the maximum speed on the car is', car1.max_speed, 'km/h.'
+      'The current speed is', car1.curr_speed, 'km/h and distance travelled is', car1.distance_travelled,'km.')
 
 
 # exercise 2
@@ -47,7 +47,7 @@ print('Car enters highway and accelerates to correct speed', car1.accelerate(70)
 print('New sports car, ofcourse you need to try how the power feels, drivers press gas pedal to the floor and speeds '
       'to', car1.accelerate(50), 'km/h')
 print('It only goes 142km/h?? Driver spots a cop car and has to brake hard, looks like the brakes are too good'
-      ', car is now going at', car1.accelerate(-200))
+      ', car is now going at', car1.accelerate(-200), 'km/h')
 
 
 # exercise 3
@@ -107,7 +107,7 @@ class Car:
 
 
 car_list = []
-for i in range(1, 10):
+for i in range(1, 11):
     new_car = Car("ABC-" + str(i), random.randint(100, 200))
     car_list.append(new_car)
 
