@@ -124,9 +124,9 @@ class Race:
 
     def print_status(self):
         print(self.name + ":")
-        print("plate  Speed  Travelled ")
+        print("Registration   Speed     Travelled ")
         for car in self.cars_list:
-            print(f"{car.reg:6s}: {car.curr_speed:3d}, {car.distance_travelled}km")
+            print(f"{car.reg:6s}:       {car.curr_speed:3d}km/h    {car.distance_travelled}km")
 
     def race_finished(self):
         for car in self.cars_list:
