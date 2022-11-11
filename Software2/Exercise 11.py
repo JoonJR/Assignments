@@ -1,5 +1,5 @@
 #Exercise 1
-print("******************Exercise1******************")
+print("\n******************Exercise1******************\n")
 class Publication():
     def __init__(self, name):
         self.name = name
@@ -31,7 +31,7 @@ for i in pubs:
     i.print_information()
 
 #Exercise2
-print("******************Exercise2******************")
+print("\n******************Exercise2******************\n")
 
 
 class Car:
@@ -62,7 +62,7 @@ class Electric(Car):
         self.battery = battery
 
     def print_distance_travelled(self):
-        print("Travelled distance is " + str(self.distance_travelled))
+        print("Electric car travelled " + str(self.distance_travelled) + "km in 3 hours")
 
 
 class Gasoline(Car):
@@ -72,13 +72,17 @@ class Gasoline(Car):
         self.tank = tank
 
     def print_distance_travelled(self):
-        print("Travelled distance is " + str(self.distance_travelled))
+        print("Gas car travelled " + str(self.distance_travelled) + "km in 3 hours")
 
 electriccar = Electric("ABC-15", 100, 52.5)
 gascar = Gasoline("ACD-123", 165, 32.3)
-electriccar.accelerate(80.)
-electriccar.drive(3.)
-gascar.accelerate(120)
-gascar.drive(3.)
+print(f"Electric cars register number is: {electriccar.reg}")
+print(f"Gas cars register number is: {gascar.reg}")
+electriccar.accelerate(90)
+electriccar.drive(3)
+print(f"Electric car accelerates to {electriccar.curr_speed} km/h and drives for 3 hours.")
+gascar.accelerate(140)
+gascar.drive(3)
+print(f"Gas car accelerates to {gascar.curr_speed} km/h and drives for 3 hours.")
 electriccar.print_distance_travelled()
 gascar.print_distance_travelled()
