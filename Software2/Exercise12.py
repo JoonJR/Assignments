@@ -10,7 +10,7 @@ print(response["value"])
 print("\n******************Exercise2******************\n")
 
 cityname = input("Enter a city name to check weather there: ")
-request = (f"https://api.openweathermap.org/data/2.5/weather?q={cityname}&appid=0f2241f6e15ca941b24d11d94718fd2e&units=metric")
+request = (APIKEY)
 try:
     response = requests.get(request)
     if response.status_code==200:
